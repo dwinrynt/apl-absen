@@ -16,3 +16,27 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/tapping', function() {
+    return view('tapping.index');
+});
+
+Route::get('/dashboard', function () {
+    return view('dashboard');
+});
+
+Route::get('/data-siswa', function () {
+    return view('dataSiswa');
+});
+
+Route::get('/absensi-guru', function () {
+    return view('absensiGuru');
+});
+
+Route::get('/detailAbsensiGuru', function () {
+    return view('detailAbsensiGuru');
+});
+
+Route::get('/absensi-guru/tambah', function () {
+    return view('tambahAbsensiGuru');
+});
